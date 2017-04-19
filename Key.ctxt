@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Key
+comment1.params=keyName\ soundFile\ keyNotPressed\ keyPressed
+comment1.target=Key(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ -act\ runs\ every\ time\ act\ is\ pressed,\ or\ every\ frame\ while\ run\ is\ active\r\n\ act\ checks\ if\ a\ key\ is\ pressed,\ and\ updates\ the\ key's\ image\ and\ plays\ a\ \r\n\ specific\ sound\r\n
+comment3.params=
+comment3.target=void\ play()
+comment3.text=\r\n\ play\ causes\ a\ specific\ sound\ to\ play\ in\ response\ to\ which\ key\ is\ pressed\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ nothing\ is\ returned\r\n
+numComments=4

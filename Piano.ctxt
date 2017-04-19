@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Piano
+comment0.text=\r\n\ A\ piano\ that\ can\ be\ played\ with\ the\ computer\ keyboard.\r\n\ \r\n\ Author\:\ Gade\ Ricard\r\n\ Teacher\:\ Mr.\ Hardman\r\n\ Assignment\:\ \#4\ Parallel\ Arrays\r\n\ Date\ Last\ Modified\:\ April\ 19\r\n
+comment1.params=
+comment1.target=Piano()
+comment1.text=\r\n\ Make\ the\ piano.\r\n
+comment2.params=
+comment2.target=void\ makeKeys()
+comment2.text=\r\n\ makeKeys\ creates\ a\ new\ Key\ object,\ and\ updates\ it\ based\ on\ the\ data\ contained\ in\ \r\n\ for\ loops\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+numComments=3
