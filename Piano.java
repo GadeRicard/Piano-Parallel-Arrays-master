@@ -10,18 +10,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
  */
 public class Piano extends World
 {
-    private String[] whiteKeys = {"q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]"};
-    private String[] whiteNotes = {"3c", "3d", "3e", "3f", "3g", "3a", "3b", "4c", "4d", "4e", "4f", "4g"};
+    private String[] whiteKeys = {"a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'", "z", "x", "c", "v", "b", "n", "m", ","};
+    private String[] whiteNotes = {"2c", "2d", "2e", "2f", "2g", "2a", "2b", "3c", "3d", "3e", "3f", "3g", "3a", "3b", "4c", "4d", "4e", "4f", "4g"};
     
-    private String[] blackKeys = {"2", "3", "", "5", "6", "7", "", "9", "0", "", "="};
-    private String[] blackNotes = {"3c#", "3d#", "", "3f#", "3g#", "3a#", "", "4c#", "4d#", "", "4f#"};
+    private String[] blackKeys = {"2", "3", "", "5", "6", "7", "", "9", "0", "", "=", "q", "w", "", "r", "t", "", "u"};
+    private String[] blackNotes = {"2c#", "2d#", "", "2f#", "2g#", "2a#", "", "3c#", "3d#", "", "3f#", "3g#", "3a#", "", "4c#", "4d#", "", "4f#"};
     
     /**
      * Make the piano.
      */
     public Piano() 
     {
-        super(800, 340, 1);
+        super(1600, 340, 1);
         
         makeKeys();
     }
@@ -48,7 +48,7 @@ public class Piano extends World
             if(blackKeys[i] != "")
             {
                 currentKey = new Key(blackKeys[i], blackNotes[i], "black-key", "black-key-down");
-                addObject(currentKey, (i*67)+30, 195);
+                addObject(currentKey, (i*67)+65, 195);
             }
         }
     }
