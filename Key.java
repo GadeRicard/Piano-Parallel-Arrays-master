@@ -8,6 +8,17 @@ public class Key extends Actor
     private String notPressed;
     private String pressed;
     
+    /**
+     * boolean Checkdown returns the isDown value when called
+     * 
+     * @param There are no parameters
+     * @return Returns the isDownBoolean, which is true when this Key object is pressed
+     */
+    public boolean checkDown()
+    {
+        return isDown;
+    }
+    
     public Key (String keyName, String soundFile, String keyNotPressed, String keyPressed)
     {
         key = keyName;
