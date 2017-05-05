@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
  * Author: Gade Ricard
  * Teacher: Mr. Hardman
  * Assignment: #5 Chord Recognizing Piano
- * Date Last Modified: May 3
+ * Date Last Modified: May 5
  */
 public class Piano extends World
 {
@@ -128,7 +128,10 @@ public class Piano extends World
         }
         else
         {
+            showText("", getWidth()/2, 30);
             showText("", getWidth()/2, 50);
+            showText("", getWidth()/2, 70);
+            showText("", getWidth()/2, 90);
         }
     }
     
@@ -144,13 +147,13 @@ public class Piano extends World
     {
         if(downKeys[0] + 1 == downKeys[1] || downKeys[0] + 2 == downKeys[1])
         {
-            showText("You have made a Second", getWidth()/2, 50);
+            showText("You have made a Second", getWidth()/2, 30);
         }
     }
     
     /**
      * checkForTriads checks if the keys currently pressed down form a chord
-     * called a 'Triad'
+     * called a 'Triad', and 'Inverted Triads'
      * 
      * @param int downKeys is an array that stores the locations of currently pressed
      * keys
@@ -160,13 +163,23 @@ public class Piano extends World
     {
         if(downKeys[0] + 3 == downKeys[1] && downKeys[1] + 4 == downKeys[2] || downKeys[0] + 4 == downKeys[1] && downKeys[1] + 3 == downKeys[2] || downKeys[0] + 3 == downKeys[1] && downKeys[1] + 3 == downKeys[2])
         {
-            showText("You have made a Triad", getWidth()/2, 50);
+            showText("You have made a Triad", getWidth()/2, 30);
+        }
+        
+        if(downKeys[0] + 4 == downKeys[1] && downKeys[1] + 5 == downKeys[2] || downKeys[0] + 3 == downKeys[1] && downKeys[1] + 5 == downKeys[2] || downKeys[0] + 3 == downKeys[1] && downKeys[1] + 6 == downKeys[2])
+        {
+            showText("You have made a Triad Inverted 1", getWidth()/2, 50);
+        }
+        
+        if(downKeys[0] + 5 == downKeys[1] && downKeys[1] + 3 == downKeys[2] || downKeys[0] + 5 == downKeys[1] && downKeys[1] + 4 == downKeys[2] || downKeys[0] + 6 == downKeys[1] && downKeys[1] + 3 == downKeys[2])
+        {
+            showText("You have made a Triad Inverted 2", getWidth()/2, 70);
         }
     }
     
     /**
      * checkForTriads checks if the keys currently pressed down form a chord
-     * called a 'Seventh'
+     * called a 'Seventh', and 'Inverted Seventh'
      * 
      * @param int downKeys is an array that stores the locations of currently pressed
      * keys
@@ -176,7 +189,22 @@ public class Piano extends World
     {
         if(downKeys[0] + 3 == downKeys[1] && downKeys[1] + 4 == downKeys[2] && downKeys[2] + 3 == downKeys[3] || downKeys[0] + 4 == downKeys[1] && downKeys[1] + 3 == downKeys[2] && downKeys[2] + 4 == downKeys[3] || downKeys[0] + 3 == downKeys[1] && downKeys[1] + 3 == downKeys[2] && downKeys[2] + 3 == downKeys[3])
         {
-            showText("You have made a Seventh", getWidth()/2, 50);
+            showText("You have made a Seventh", getWidth()/2, 30);
+        }
+        
+        if(downKeys[0] + 4 == downKeys[1] && downKeys[1] + 3 == downKeys[2] && downKeys[2] + 2 == downKeys[3] || downKeys[0] + 3 == downKeys[1] && downKeys[1] + 4 == downKeys[2] && downKeys[2] + 1 == downKeys[3] || downKeys[0] + 3 == downKeys[1] && downKeys[1] + 3 == downKeys[2] && downKeys[2] + 3 == downKeys[3])
+        {
+            showText("You have made a Seventh Inverted 1", getWidth()/2, 50);
+        }
+        
+        if(downKeys[0] + 3 == downKeys[1] && downKeys[1] + 2 == downKeys[2] && downKeys[2] + 3 == downKeys[3] || downKeys[0] + 4 == downKeys[1] && downKeys[1] + 1 == downKeys[2] && downKeys[2] + 4 == downKeys[3] || downKeys[0] + 3 == downKeys[1] && downKeys[1] + 3 == downKeys[2] && downKeys[2] + 3 == downKeys[3])
+        {
+            showText("You have made a Seventh Inverted 2", getWidth()/2, 70);
+        }
+        
+        if(downKeys[0] + 2 == downKeys[1] && downKeys[1] + 3 == downKeys[2] && downKeys[2] + 4 == downKeys[3] || downKeys[0] + 1 == downKeys[1] && downKeys[1] + 4 == downKeys[2] && downKeys[2] + 3 == downKeys[3] || downKeys[0] + 3 == downKeys[1] && downKeys[1] + 3 == downKeys[2] && downKeys[2] + 3 == downKeys[3])
+        {
+            showText("You have made a Seventh Inverted 3", getWidth()/2, 90);
         }
     }
 }
